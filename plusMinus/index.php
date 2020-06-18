@@ -10,10 +10,10 @@ function plusMinus($arr) {
         if($a === 0) {
             $result[2]++;
         }
-        else if($a > 0) {
+        elseif($a > 0) {
             $result[0]++;
         }
-        else if($a < 0) {
+        elseif($a < 0) {
             $result[1]++;
         }
     }

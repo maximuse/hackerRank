@@ -12,7 +12,7 @@ function caesarCipher($s, $k) {
             $result .= $s[$i];
             continue;
         }
-        else if(ctype_upper($s[$i])) {
+        elseif(ctype_upper($s[$i])) {
             $result .= chr((ord($s[$i]) + $k - 65) % 26 + 65);
         }
         else {
