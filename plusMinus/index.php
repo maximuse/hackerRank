@@ -7,7 +7,7 @@ function plusMinus($arr) {
     foreach($arr as $a) {
         $a = (int) $a;
         
-        if ($a === 0) {
+        if($a === 0) {
             $result[2]++;
         }
         else if($a > 0) {
