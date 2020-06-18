@@ -18,8 +18,8 @@ function insertionSort2($n, $arr) {
             $result .= $arr[$j] . ' ';
         }
 
-        //$result .= PHP_EOL;
-        $result .= '<br />' . PHP_EOL;
+        //$result .= '<br />' . PHP_EOL;
+        $result .= PHP_EOL;
     }
 
     echo $result;
