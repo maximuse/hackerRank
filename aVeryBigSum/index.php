@@ -1,7 +1,8 @@
 <?php
 // Complete the aVeryBigSum function below.
 function aVeryBigSum($ar) {
-	var_dump($ar);
+	array_walk($ar, 'intval');
+    return array_sum($ar);
 }
 
 //$fptr = fopen(getenv("OUTPUT_PATH"), "w");
