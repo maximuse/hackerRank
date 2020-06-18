@@ -7,12 +7,12 @@
 function caesarCipher($s, $k) {
     $result = '';
 
-    for($i = 0; $i < strlen($s); $i++) {
-        if(!ctype_alpha($s[$i])) {
+    for ($i = 0; $i < strlen($s); $i++) {
+        if (!ctype_alpha($s[$i])) {
             $result .= $s[$i];
             continue;
         }
-        elseif(ctype_upper($s[$i])) {
+        elseif (ctype_upper($s[$i])) {
             $result .= chr((ord($s[$i]) + $k - 65) % 26 + 65);
         }
         else {

@@ -4,16 +4,16 @@ function plusMinus($arr) {
     $len = count($arr);
     $result = [0, 0, 0];
     
-    foreach($arr as $a) {
+    foreach ($arr as $a) {
         $a = (int) $a;
         
-        if($a === 0) {
+        if ($a === 0) {
             $result[2]++;
         }
-        elseif($a > 0) {
+        elseif ($a > 0) {
             $result[0]++;
         }
-        elseif($a < 0) {
+        elseif ($a < 0) {
             $result[1]++;
         }
     }

@@ -17,7 +17,7 @@ function minimumNumber($n, $password) {
         $code++;
     }
 
-    if (!preg_match('/[!@#$%^&*()-+]/', $password)) {
+    if (!preg_match('/[!@#$%^&*()\-+]/', $password)) {
         $code++;
     }
 
@@ -35,7 +35,7 @@ function minimumNumber($n, $password) {
 
 //$fptr = fopen(getenv("OUTPUT_PATH"), "w");
 
-$stdin = fopen("input64.txt", "r");
+$stdin = fopen("input00.txt", "r");
 
 fscanf($stdin, "%d\n", $n);
 

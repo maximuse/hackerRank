@@ -4,7 +4,7 @@ function viralAdvertising($n) {
     $sum = floor(5 / 2);
     $sumInDay = floor(5 / 2);
 
-    for($i = 2; $i <= $n; $i++) {
+    for ($i = 2; $i <= $n; $i++) {
         $sumInDay = floor($sumInDay * 3 / 2);
         $sum += $sumInDay;
     }
