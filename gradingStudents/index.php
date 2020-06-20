@@ -17,12 +17,7 @@ function gradingStudents($grades) {
                 $n++;
             }
 
-            if ($n < 3) {
-                $result[] = $grade + $n;
-            }
-            else {
-                $result[] = $grade;
-            }
+            $result[] = ($n < 3) ? ($grade + $n) : $grade;
         }
         else {
             $result[] = $grade;
