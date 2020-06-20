@@ -1,6 +1,8 @@
 <?php
 // Complete the pangrams function below.
 function pangrams($s) {
+    echo $s . '<br>';
+
     $s = mb_strtolower($s);
     $alphabet = 'abcdefghijklmnopqrstuvwxyz';
     $letters = [];
