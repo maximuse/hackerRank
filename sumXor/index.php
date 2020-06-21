@@ -1,7 +1,7 @@
 <?php
 // Complete the sumXor function below.
 function sumXor($n) {
-    $c = 0;
+    /*$c = 0;
 
     for ($i = 0; $i < $n; $i++) {
         //if (($n + $i) == (variant_xor($n, $i))) {
@@ -10,7 +10,9 @@ function sumXor($n) {
         }
     }
 
-    return $c;
+    return $c;*/
+
+    return ($n > 0) ? pow(2, substr_count(decbin($n), '0')) : 1;
 }
 
 //$fptr = fopen(getenv("OUTPUT_PATH"), "w");
