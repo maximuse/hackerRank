@@ -12,10 +12,10 @@ function birthday($s, $d, $m) {
         }
     }
     else {
-        for ($i = 0; $i < ($l - $m + 1); $i++){
+        for ($i = 0; $i < $l - $m + 1; $i++){
             $sum = 0;
 
-            for ($j = $i; $j < ($i + $m); $j++){
+            for ($j = $i; $j < $i + $m; $j++){
                 $sum += $s[$j];
             }
 
