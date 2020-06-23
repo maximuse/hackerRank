@@ -1,15 +1,7 @@
 <?php
 // Complete the catAndMouse function below.
 function catAndMouse($x, $y, $z) {
-    if (abs(($x - $z)) < abs(($y - $z))) {
-        return 'Cat A';
-    }
-    elseif (abs(($x - $z)) > abs(($y - $z))) {
-        return 'Cat B';
-    }
-    else {
-        return 'Mouse C';
-    }
+    return (abs($x - $z) < abs($y - $z)) ? "Cat A" : (abs($x - $z) > abs($y - $z)) ? "Cat B" : "Mouse C";
 }
 
 //$fptr = fopen(getenv("OUTPUT_PATH"), "w");
@@ -28,7 +20,7 @@ for ($q_itr = 0; $q_itr < $q; $q_itr++) {
 
     $z = intval($xyz[2]);
 
-    $result = catAndMouse($x, $y, $z);
+    echo $result = catAndMouse($x, $y, $z);
 
     //fwrite($fptr, $result . "\n");
 }
